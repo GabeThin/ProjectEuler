@@ -14,4 +14,6 @@ def multiples(limit):
 
     return sum(nums)
 
-print(multiples(19564))
+while True:
+    multiples(input())
+    print()
