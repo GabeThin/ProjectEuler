@@ -1,19 +1,10 @@
 def multiples(limit):
-    mult = 1
-    nums = []
+    sum = 0
 
+    for i in range(1, 1000):
+        if i % 5 == 0 or i % 3 == 0:
+            sum += i
 
+    return sum
 
-    while 5 * mult < limit or 3 * mult < limit:
-        if 3 * mult not in nums:
-            nums.append(3 * mult)
-        if 5 * mult < limit and 5 * mult not in nums:
-            nums.append(5 * mult)
-
-        mult += 1
-
-    return sum(nums)
-
-while True:
-    multiples(input())
-    print()
+print(multiples(1000))
